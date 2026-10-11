@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="QC Research Vault Backup privacy policy: Google Drive data access, backup use, storage, security and retention.">
+  <title>Privacy Policy | QC Research Vault Backup</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header><a class="logo" href="/">QC <span>Research Vault</span></a><nav><a href="/">Home</a><a href="/privacy/" aria-current="page">Privacy Policy</a></nav></header>
+<main>
+<section class="hero"><p class="eyebrow">PRIVACY & DATA HANDLING</p><h1>Privacy <em>Policy</em></h1><p class="lede">Last updated October 11, 2026. This policy applies to QC Research Vault Backup, a privately operated archive-preservation utility.</p></section>
+<section class="about">
+<h2>Purpose and operator</h2>
+<p>QC Research Vault Backup is operated privately to preserve the operator's authorized research archive. It is not a public file-sharing service. For privacy-related questions, contact <a href="mailto:quantcrawler.researchvault@gmail.com">quantcrawler.researchvault@gmail.com</a>.</p>
+<h2>Google data accessed</h2>
+<p>A separately authorized, read-only service account accesses source Google Drive archive files and metadata. The dedicated destination account grants the Google Drive OAuth scope <code>https://www.googleapis.com/auth/drive</code>, which technically allows access to all files in that account's Drive, not just one folder. The workflow validates the authorized account and target vault and is intended to operate only on that approved destination.</p>
+<p>Depending on the manually selected operation, the utility handles file names, IDs, folder relationships, size and checksum metadata, and the content of files being backed up and verified.</p>
+<h2>How information is used</h2>
+<p>Google data is used only to inventory the approved archive, recreate its folder structure, copy its files, maintain resumable checkpoints, and verify the integrity of restored content. The backup utility does not sell Google user data, use it for advertising, or make archive contents publicly available.</p>
+<h2>Storage and retention</h2>
+<p>Archived copies, a source inventory, verification metadata, and backup progress records are stored in a designated Google Drive vault owned by the separate backup account. They remain there until the account owner chooses to remove them. Temporary file bytes on GitHub Actions runners are used for transfers and checksum verification; they are not intentionally committed to this public repository or retained in GitHub Actions artifacts.</p>
+<p>Private workflow artifacts may contain limited per-run operational summaries, configured for a 30-day retention period. Access credentials are stored in private GitHub Actions secrets rather than public source code.</p>
+<h2>Disclosure and security</h2>
+<p>Google provides file storage and transfer APIs, and GitHub provides workflow execution and hosting for these public informational pages. These service providers may process relevant data to provide their services. The utility uses source read-only credentials, manually authorized workflow runs, destination identity checks, and checksum verification to protect backups. No system is risk-free.</p>
+<h2>Website visits</h2>
+<p>This static website does not include registration forms, advertising trackers, or operator-installed analytics. Hosting and network providers may handle technical request data subject to their respective policies. Emailing the operator voluntarily shares the information included in the message.</p>
+<h2>Your control and changes</h2>
+<p>The Google account owner may revoke OAuth access in Google Account settings and may request deletion of vault-held copies or backup records by contacting the operator. This policy will be updated if material data practices change.</p>
+</section>
+</main>
+<footer><span>© 2026 QC Research Vault Backup</span><a href="/">Home</a></footer>
+</body>
+</html>
